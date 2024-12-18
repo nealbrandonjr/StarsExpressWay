@@ -1,0 +1,88 @@
+body {
+    margin: 0; /* Remove default body margins to allow full-screen rendering */
+    overflow: hidden; /* Hide scrollbars to restrict content within viewport */
+    background-color: black; /* Set background color to black for star simulation theme */
+    font-family: Arial, sans-serif; /* Apply clean and legible font for text elements */
+  }
+  
+  canvas {
+    display: block; /* Ensure canvas is displayed as a block-level element */
+  }
+  
+  .controls {
+    position: absolute; /* Fix controls at a specific position on the screen */
+    bottom: 50px; /* Align controls 50px above bottom edge */
+    left: 10px; /* Start positioning controls slightly from left edge */
+    display: flex; /* Use flex layout for even spacing between buttons */
+    gap: 10px; /* Add spacing between control buttons */
+    justify-content: center; /* Center controls horizontally within parent */
+    width: 100%; /* Allow controls to span full width of screen */
+  }
+  
+  button {
+    width: 50px; /* Set consistent width for control buttons */
+    height: 50px; /* Set consistent height for control buttons */
+    border-radius: 50%; /* Make buttons circular */
+    border: none; /* Remove default button border */
+    font-size: 24px; /* Set font size for button text/icons */
+    cursor: pointer; /* Change cursor to pointer for hover indication */
+    background-color: #444; /* Set default background color for buttons */
+    color: white; /* Set button text color to white */
+    text-align: center; /* Center-align text within buttons */
+    line-height: 50px; /* Vertically center text/icons inside buttons */
+    display: inline-block; /* Ensure buttons align inline within flex layout */
+  }
+  
+  button:hover {
+    background-color: #666; /* Change background color on hover for visual feedback */
+  }
+  
+  .top-left {
+    position: absolute; /* Fix element position relative to top-left corner */
+    top: 10px; /* Offset element 10px from top edge */
+    width: 100%; /* Allow element to span full width for text centering */
+    text-align: center; /* Center-align text horizontally */
+    color: white; /* Set text color to white for readability */
+    font-size: 14px; /* Set smaller font size for subtle information display */
+  }
+  
+  .top-left a {
+    color: white; /* Set link color to white to match design */
+    text-decoration: none;  /* Remove underline from links by default */
+  }
+  
+  .top-left a:hover {
+    text-decoration: underline; /* Add underline on hover for accessibility */
+  }
+  
+  .bottom-center {
+    position: absolute; /* Fix element position relative to bottom-center */
+    bottom: 120px; /* Align element 120px above bottom edge */
+    width: 100%; /* Allow element to span full width for text centering */
+    text-align: center; /* Center-align text horizontally */
+    color: white;  /* Set text color to white for readability */
+    font-size: 20px; /* Set larger font size for emphasis */
+  }
+  
+  #transparent-footer {
+    position: fixed; /* Fix footer at the bottom of the viewport */
+    bottom: 0;  /* Align footer to bottom edge of screen */
+    width: 100%;  /* Allow footer to span full width of screen */
+    color: white; /* Set footer text color to white */
+    text-align: center; /* Center-align footer content */
+    padding: 5px 10px; /* Add padding for spacing around text */
+    font-size: 12px; /* Use smaller font size for footer information */
+    z-index: 9999; /* Ensure footer appears above other elements */
+    white-space: normal; /* Allow text wrapping for long content */
+    font-family: Arial, sans-serif; /* Apply consistent font family */
+  }
+  
+  #transparent-footer a {
+    color: white; /* Set link color in footer to white */
+    text-decoration: underline; /* Underline links for clear visibility */
+  }
+  
+  #transparent-footer a:hover {
+    text-decoration: none; /* Remove underline on hover for cleaner look */
+  }
+  

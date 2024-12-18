@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+        Author: Neal Brandon Jr
+        Website: www.nealsdevsite.com
+        Description: STARS EXPRESS WAY v0.3.5
+  -->
+  <!-- Using UTF-8 charset for encoding and has wide range of characters -->
+  <meta charset="UTF-8">
+  <!-- Page scales on various mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Browser Tab Title -->
+  <title>Relativistic Star Simulation v0.3.5</title>
+  <!-- CSS file link to style the canvas and UI elements -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<!-- Canvas will serve as rendering surface for star simulation -->
+<canvas id="starareaCanvas"></canvas>
+
+<!-- Developer's main site and version info -->
+<div class="top-left">
+  <a href="https://www.nealsdevsite.com/" target="_blank">Developers Main Site: www.nealsdevsite.com</a><br>
+  <span>Stars Express Way v0.3.5</span><br>
+  <span>Author: Neal Brandon Jr - v0.3.5</span>
+</div>
+
+<!-- The bottom-center block displays real-time information about speed and direction of travel -->
+<div class="bottom-center">
+  <span id="speedText">0% Speed of Light</span><br>
+  <span id="directionText">Front</span>
+</div>
+
+<!-- Control buttons to manage direction, speed, and reset functions -->
+<div class="controls">
+  <button id="turnAroundBtn">↺</button>
+  <button id="increaseSpeedBtn">▲</button>
+  <button id="decreaseSpeedBtn">▼</button>
+  <button id="forwardBtn">+</button>
+  <button id="reverseBtn">-</button>
+  <button id="resetBtn">R</button>
+</div>
+
+<!-- Core JS modules for star simulation and application logic -->
+<script src="./js/stararea.js" type="module" defer></script>
+<script src="./js/app.js" type="module" defer></script>
+
+<!-- Footer for licensing details and attribution links. -->
+<div id="transparent-footer">
+  <p>
+    Licensed under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">
+      MIT License
+    </a>. 
+    Please provide credit by linking to: 
+    <a href="https://www.nealsdevsite.com" target="_blank" rel="noopener noreferrer">
+      www.nealsdevsite.com
+    </a>.
+  </p>
+</div>
+
+</body>
+</html>
